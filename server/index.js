@@ -47,12 +47,12 @@ app.post('/addtodo',async(req,res)=>{
 
 // -------HANDLE GET REQUEST-------------for read the data
 
-// app.get('/readTodo',async(req,res)=>{
-//     let todos = await TodoModel.find()
-//     console.log('todos-read', todos)
-//     res.send(todos)
+app.get('/readTodo',async(req,res)=>{
+    let todos = await TodoModel.find()
+    console.log('todos-read', todos)
+    res.send(todos)
     
-// })
+})
 // -------update todo ****** HANDLE Post REQUEST-------------for read the data
 
 app.post('/updateTodo',async(req,res)=>{
